@@ -1,18 +1,18 @@
-spring:
-  cloud:
-    gateway:
-      routes:
-        - id: customer-ms
-          uri: http://localhost:8080
-          predicates:
-            - Path=/customer-ms/**
-        - id: order-ms
-          uri: http://localhost:8081
-          predicates:
-            - Path=/api/v1/orders/**
-        - id: product-ms
-          uri: http://localhost:8082
-          predicates:
-            - Path=/api/v1/products/**
+#spring:
+#  cloud:
+#    gateway:
+#      routes:
+#        - id: customer-ms
+#          uri: http://localhost:8080
+#          predicates:
+#            - Path=/customer-ms/**
+#        - id: order-ms
+#          uri: http://localhost:8081
+#          predicates:
+#            - Path=/api/v1/orders/**
+#        - id: product-ms
+#          uri: http://localhost:8082
+#          predicates:
+#            - Path=/api/v1/products/**
 server:
   port: 8084
