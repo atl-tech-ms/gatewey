@@ -14,5 +14,11 @@
 #          uri: http://localhost:8082
 #          predicates:
 #            - Path=/api/v1/products/**
+app:
+  url:
+    customer: http://localhost:8080
+    order: http://localhost:8081
+    product: http://localhost:8082
+
 server:
-  port: 8084
+  port: 8083
